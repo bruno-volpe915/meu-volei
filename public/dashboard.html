@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard | Meu Vôlei</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo">🏐 Meu <span>Vôlei</span></div>
+    <div>
+      <a class="link" href="index.html">Início</a>
+      <a class="link" href="sistema-5x1.html">Sistema 5x1</a>
+      <a class="link" href="cadastro.html">Cadastro</a>
+      <a class="link" href="login.html">Login</a>
+      <a class="link ativo" href="dashboard.html">Dashboard</a>
+      <a class="link" href="jogo.html">Mini jogo</a>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="d-topo">
+    <div>
+      <h2>Olá, <span id="nome"></span>!</h2>
+      <p class="sub" id="ola"></p>
+    </div>
+    <button class="btn sec" id="sair">Sair</button>
+  </section>
+
+  <section class="d-kpis">
+    <div class="d-kpi"><b id="total">0</b><span>jogadores cadastrados</span></div>
+    <div class="d-kpi"><b id="maisComum">-</b><span>posição mais comum</span></div>
+    <div class="d-kpi"><b id="minhaPct">0%</b><span id="minhaLabel">dos jogadores jogam na sua posição</span></div>
+    <div class="d-kpi"><b id="novos">0</b><span>novos nos últimos 7 dias</span></div>
+  </section>
+
+  <div class="d-grid">
+    <section class="painel">
+      <h3>Jogadores por posição</h3>
+      <div class="d-donut-wrap">
+        <div class="d-donut" id="donut"><div><b id="donutTotal">0</b><small>jogadores</small></div></div>
+        <ul class="d-legenda" id="legenda"></ul>
+      </div>
+    </section>
+    <section class="painel">
+      <h3>Últimos cadastros</h3>
+      <ul class="d-recentes" id="recentes"></ul>
+    </section>
+  </div>
+  <div class="msg" id="msg"></div>
+</main>
+<script src="dashboard.js"></script>
+</body></html>

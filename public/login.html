@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login | Meu Vôlei</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo">🏐 Meu <span>Vôlei</span></div>
+    <div>
+      <a class="link" href="index.html">Início</a>
+      <a class="link" href="sistema-5x1.html">Sistema 5x1</a>
+      <a class="link" href="cadastro.html">Cadastro</a>
+      <a class="link ativo" href="login.html">Login</a>
+      <a class="link" href="dashboard.html">Dashboard</a>
+      <a class="link" href="jogo.html">Mini jogo</a>
+    </div>
+  </nav>
+</header>
+<main>
+  <div class="form-box painel">
+    <h2>Entrar</h2>
+    <p class="sub">Acesse sua conta para ver o dashboard.</p>
+    <div class="campo"><label for="email">E-mail</label><input id="email" type="email" autocomplete="email"><span class="erro" id="erro-email"></span></div>
+    <div class="campo"><label for="senha">Senha</label><input id="senha" type="password" autocomplete="current-password"><span class="erro" id="erro-senha"></span></div>
+    <button class="btn" id="entrar">Entrar</button>
+    <div class="msg" id="msg"></div>
+    <p class="sub" style="margin-top:14px">Ainda não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+  </div>
+</main>
+<script src="auth.js"></script>
+</body></html>

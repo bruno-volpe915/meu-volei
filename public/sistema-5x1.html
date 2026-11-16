@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sistema 5x1 | Meu Vôlei</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo">🏐 Meu <span>Vôlei</span></div>
+    <div>
+      <a class="link" href="index.html">Início</a>
+      <a class="link ativo" href="sistema-5x1.html">Sistema 5x1</a>
+      <a class="link" href="cadastro.html">Cadastro</a>
+      <a class="link" href="login.html">Login</a>
+      <a class="link" href="dashboard.html">Dashboard</a>
+      <a class="link" href="jogo.html">Mini jogo</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <h2>O sistema 5x1</h2>
+  <p class="sub">No 5x1 jogam 1 levantador e 5 atacantes: 1 oposto, 2 ponteiros e 2 centrais. O líbero entra no lugar do central quando ele está no fundo da quadra.</p>
+
+  <div class="painel">
+    <strong>1. Escolha a posição em que você joga</strong>
+    <div class="opcoes" id="opcoes"></div>
+  </div>
+
+  <div class="painel">
+    <div class="quadra-wrap">
+      <div class="quadra" id="quadra">
+        <div class="rede"></div>
+        <div class="ataque"></div>
+        <div class="zona z4">4</div><div class="zona z3">3</div><div class="zona z2">2</div>
+        <div class="banco"><span id="bancoTxt"></span></div>
+        <div class="zona z5">5</div><div class="zona z6">6</div><div class="zona z1">1</div>
+      </div>
+      <div class="legenda">
+        <span><i style="background:#ff7a1a"></i>Você</span>
+        <span><i style="background:#1e6fd9"></i>Colegas</span>
+        <span><i style="background:#16a34a"></i>Líbero</span>
+        <span>▲ Rede no topo da quadra</span>
+      </div>
+    </div>
+    <div class="controles">
+      <button class="btn" id="rodar">🔄 Rodar</button>
+      <button class="btn" id="simular">🏐 Simular jogada</button>
+      <button class="btn sec" id="reiniciar">Reiniciar</button>
+    </div>
+    <div class="info" id="info">Escolha uma posição para começar.</div>
+  </div>
+
+  <div class="painel">
+    <strong>Quem faz o quê</strong>
+    <div class="funcoes">
+      <div><strong>Levantador:</strong> comanda o jogo e distribui as bolas para os atacantes.</div>
+      <div><strong>Oposto:</strong> atacante que fica na diagonal do levantador e finaliza muitas jogadas.</div>
+      <div><strong>Ponteiro:</strong> recebe o saque, defende e ataca pelas pontas.</div>
+      <div><strong>Central:</strong> bloqueia no meio da rede e ataca bolas rápidas.</div>
+      <div><strong>Líbero:</strong> especialista em defesa e recepção; só joga no fundo da quadra.</div>
+    </div>
+  </div>
+</main>
+
+<footer>Projeto individual · SPTECH · Feito por [seu nome]</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cadastro | Meu Vôlei</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo">🏐 Meu <span>Vôlei</span></div>
+    <div>
+      <a class="link" href="index.html">Início</a>
+      <a class="link" href="sistema-5x1.html">Sistema 5x1</a>
+      <a class="link ativo" href="cadastro.html">Cadastro</a>
+      <a class="link" href="login.html">Login</a>
+      <a class="link" href="dashboard.html">Dashboard</a>
+      <a class="link" href="jogo.html">Mini jogo</a>
+    </div>
+  </nav>
+</header>
+<main>
+  <div class="form-box painel">
+    <h2>Criar conta</h2>
+    <p class="sub">Cadastre-se e escolha a posição em que você joga.</p>
+    <div class="campo"><label for="nome">Nome</label><input id="nome" type="text" autocomplete="name"><span class="erro" id="erro-nome"></span></div>
+    <div class="campo"><label for="email">E-mail</label><input id="email" type="email" autocomplete="email"><span class="erro" id="erro-email"></span></div>
+    <div class="campo"><label for="posicao">Posição</label><select id="posicao"><option value="">Selecione</option><option value="1">Levantador</option><option value="2">Ponteiro</option><option value="3">Central</option><option value="4">Oposto</option><option value="5">Líbero</option></select><span class="erro" id="erro-posicao"></span></div>
+    <div class="campo"><label for="senha">Senha</label><input id="senha" type="password" autocomplete="new-password"><span class="erro" id="erro-senha"></span></div>
+    <div class="campo"><label for="confirmar">Confirmar senha</label><input id="confirmar" type="password" autocomplete="new-password"><span class="erro" id="erro-confirmar"></span></div>
+    <button class="btn" id="enviar">Criar conta</button>
+    <div class="msg" id="msg"></div>
+    <p class="sub" style="margin-top:14px">Já tem conta? <a href="login.html">Entrar</a></p>
+  </div>
+</main>
+<script src="auth.js"></script>
+</body></html>
