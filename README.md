@@ -1,6 +1,6 @@
 # Meu Vôlei
 
-Projeto individual SPTECH. Arquitetura (igual ao web-data-viz):
+Projeto individual SPTECH.   Meu Volei!:
 `public/` (front) -> `src/routes` -> `src/controllers` -> `src/models` -> `src/database/config.js` -> MySQL.
 
 ## Como rodar
